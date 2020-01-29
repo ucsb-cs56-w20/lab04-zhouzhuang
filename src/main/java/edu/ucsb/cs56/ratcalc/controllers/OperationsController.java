@@ -85,6 +85,7 @@ public class OperationsController {
         return "operations/subtract";
     }
 
+
     @GetMapping("/subtract/results")
     public String getSubtractResult(Model model, @Valid RatCalcForm ratCalcForm, BindingResult bindingResult) {
         logger.info("getSubtractResult ratCalcForm=" + ratCalcForm);
